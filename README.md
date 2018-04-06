@@ -1,23 +1,18 @@
-## Token Factory
+## Token ~~Factory~~ Sweatshop
 
-The Token Factory allows simple creation of a standard ERC20 token on Ethereum. It requires an injected web3 (Mist or Metamask) to function. It also has uPort support.
+This token sweatshop allows easy creation of a standard ERC20 token on Ethereum the Ethereum blockchain for less. Its GasPrice is locked to 1 Gwei.
 
-It does not use an on-chain factory at this point in time.
+I forked this repository because Mist's oracles for gas prices on contracts are far too rigid and for someone who's not in a hurry to put up a token, a gas price of 20 Gwei is overkill.
 
-Disclaimer: This was app was built in part so that I can learn React as well. It's not the neatest code, so keep that in mind. If you want to help clean it up and maybe help move it to Redux (which I want to do), you are welcome to help.
+Of course, if the SafeLow on https://ethgasstation.info is >5 Gwei, expect a transaction through this to take forever. That's when you'll be much better off deploying for 20 Gwei on the original Token Factory at https://tokenfactory.surge.sh
 
-Contracts & Tests are borrowed from Tokens repo. Using Truffle (with Webpack). Tested with Truffle@beta (v3.0.0-3).
+Just like the original recipe, this dApp requires an injected web3 (Mist or Metamask) to function. It also has uPort support. It does not use an on-chain factory at this point in time.
 
-## Developing
+## Hey Daniel, stop being an idiot and download Metamask
 
-```npm install```   
-```npm install -g webpack```
-```npm install -g truffle```
-```truffle serve```
+Metamask is a brilliant software that injects a web3 stim pack into your boring old browser but its lack of support for hardware wallets and the upcoming end of the road for the Chrome App Store isn't convincing.
 
-## Contributing
-
-There's still some outstanding issues related to UX/Design that needs to be finished. Please submit bugs & pull requests!
+Plus, hardware wallets exist for a reason, thus using Mist to have hardware wallets sign transactions enables us to deploy contracts to the blockchain that are controlled and can only be controlled by the private key that never leaves the wallet. However, not everyone wants to deal with the 20 Gwei GasPrice. I cetrainly don't.
 
 **This code is licensed under MIT.**
 
