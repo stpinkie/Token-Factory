@@ -6,7 +6,7 @@ I forked this repository because Mist's oracles for gas prices on contracts are 
 
 Of course, if the SafeLow on https://ethgasstation.info is >5 Gwei, expect a transaction through this to take forever. That's when you'll be much better off deploying for 20 Gwei on the original Token Factory at https://tokenfactory.surge.sh
 
-Just like the original recipe, this dApp requires an injected web3 (Mist or Metamask) to function. It also has uPort support. It does not use an on-chain factory at this point in time.
+Just like the original recipe, this dApp requires an injected web3 (Mist or Metamask) to function. It does not use an on-chain factory at this point in time.
 
 ## Hey Daniel, stop being an idiot and install Metamask...
 
