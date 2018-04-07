@@ -1,6 +1,6 @@
 ## Token ~~Factory~~ Sweatshop
 
-This token sweatshop allows easy creation of a standard ERC20 token on Ethereum the Ethereum blockchain for less. Its GasPrice is locked to 1 Gwei.
+This token sweatshop allows easy creation of a standard ERC20 token on the Ethereum blockchain for less. Its GasPrice is locked to 1 Gwei.
 
 I forked this repository because Mist's oracles for gas prices on contracts are far too rigid and for someone who's not in a hurry to put up a token, a gas price of 20 Gwei is overkill.
 
@@ -8,11 +8,15 @@ Of course, if the SafeLow on https://ethgasstation.info is >5 Gwei, expect a tra
 
 Just like the original recipe, this dApp requires an injected web3 (Mist or Metamask) to function. It also has uPort support. It does not use an on-chain factory at this point in time.
 
-## Hey Daniel, stop being an idiot and download Metamask
+## Hey Daniel, stop being an idiot and install Metamask...
 
 Metamask is a brilliant software that injects a web3 stim pack into your boring old browser but its lack of support for hardware wallets and the upcoming end of the road for the Chrome App Store isn't convincing.
 
 Plus, hardware wallets exist for a reason, thus using Mist to have hardware wallets sign transactions enables us to deploy contracts to the blockchain that are controlled and can only be controlled by the private key that never leaves the wallet. However, not everyone wants to deal with the 20 Gwei GasPrice. I cetrainly don't.
+
+## ...then why don't you download Parity instead?
+
+Parity's warp sync has issues. It's probably something personal against me. I dunno lol.
 
 **This code is licensed under MIT.**
 
